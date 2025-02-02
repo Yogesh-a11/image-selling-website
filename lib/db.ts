@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import { buffer } from "stream/consumers";
 
-const MONGODB_URI = process.env.MONGODB_URI!;
+const MONGODB_URI = process.env.MONGODB_URL!;
 
 if (!MONGODB_URI) {
     throw new Error("Please check your connnetion string")
